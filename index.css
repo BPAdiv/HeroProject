@@ -272,6 +272,9 @@ body {
     transition: ease 250ms;
 }
 
+.images figure:hover {
+    transform: translateY(-55%);
+}
 
 
 .images figure::before {
@@ -293,19 +296,11 @@ body {
 
 }
 
-@media screen {
-
-    .images figure:hover {
-        transform: translateY(-55%);
-    }
-
-    .images figure:hover::before {
-        display: block;
-        z-index: 1;
-        transform: translateY(110%);
-    }
+.images figure:hover::before {
+    display: block;
+    z-index: 1;
+    transform: translateY(110%);
 }
-
 
 .images figcaption {
     background-color: black;
@@ -499,7 +494,21 @@ nav a:hover {
 
 
 
+    .images figure:hover::before {
+        transform: translateY(0px);
+        transform: unset;
 
+    }
+
+    .images figure:hover {
+        transform: translateY(0px);
+    }
+
+    .images figure:before {
+        display: none;
+        transform: translateX(-110%);
+
+    }
 
     .sub-card {
         flex-wrap: wrap;
@@ -514,11 +523,4 @@ nav a:hover {
         width: 100%;
     }
 
-    /* .images figure {
-        transform: translateX(50%);
-    }
-
-    .images figure::before {
-        transform: translateX(-50%);
-    } */
 }

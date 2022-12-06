@@ -21,28 +21,29 @@ body {
 
 
 .heading {
-    background-position-y: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(./hero-assets/top-bg-2.jpg);
     height: 110vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    /* align-items: center; */
-    /* padding: 10rem; */
+    justify-content: space-between;
+    padding-inline: 10vw;
+
 
 }
 
 .heading img {
-    width: 180px;
-    height: 180px;
-    align-self: flex-end;
+    width: 25vw;
+    height: 25vw;
+    /* align-self: flex-end; */
     margin-right: 5rem;
-    animation: roll-in-left 1s ease-out both;
+    /* animation: roll-in-left 1s ease-out both; */
 
 }
 
+/* Anime
 @keyframes roll-in-left {
     0% {
 
@@ -55,17 +56,17 @@ body {
         transform: translateX(0) rotate(0deg);
         opacity: 1;
     }
-}
+} */
 
 
 .heading h1 {
     color: white;
     font-size: 5.5rem;
     width: max-content;
-    margin-left: 10rem;
+    /* padding-inline: 10vw; */
     font-family: 'Permanent Marker', serif;
     transition: 250ms;
-    /* margin-bottom: 0rem; */
+
 
 }
 
@@ -75,10 +76,10 @@ body {
     transform: scale(1.1);
 }
 
+/* H1ANIME
 .heading h1 {
     animation: fade-in-top 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    /* animation-duration: 3s;
-    animation-name: fade-in-top; */
+   
 }
 
 @keyframes fade-in-top {
@@ -91,26 +92,15 @@ body {
         transform: translateY(0);
         opacity: 1;
     }
-}
-
-
-/* @keyframes fade-in-top {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-
-    to {
-        margin-left: 10rem;
-        width: 100%;
-    }
 } */
+
+
 
 .heading p {
     color: grey;
     font-size: 2rem;
-    margin-left: 10rem;
-    margin-bottom: 12.5rem;
+    /* padding-inline: 9vh; */
+    margin-bottom: 12vh;
 
     background: -webkit-linear-gradient(60deg, gray, white);
     -webkit-background-clip: text;
@@ -118,11 +108,11 @@ body {
     font-family: 'Cinzel', serif;
 }
 
-.heading p {
+/* .heading p {
     animation-duration: 3s;
     animation-name: slidein;
 }
-
+ANIME   
 @keyframes slidein {
     from {
         margin-left: 100%;
@@ -133,8 +123,10 @@ body {
         margin-left: 10rem;
         width: 100%;
     }
+} */
+.reviews>h1>span {
+    display: block;
 }
-
 
 .company-profile,
 .services,
@@ -144,12 +136,8 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 6rem;
-    /* gap: 2rem; */
-    /* justify-content: center;
-    align-items: center; */
-    padding: 6rem 10rem;
-    /* height: 100vh; */
-    ;
+    padding: 6vw 10vw;
+
 
 }
 
@@ -159,8 +147,6 @@ body {
     justify-content: space-between;
     gap: 2rem;
     color: white;
-    /* margin-inline: 5rem; */
-
     max-width: 75%;
 }
 
@@ -200,7 +186,7 @@ body {
 }
 
 .reviews {
-    padding: 10rem;
+    padding: 10vw;
     display: flex;
     background-color: #000000;
     /* gap: 4rem; */
@@ -212,7 +198,8 @@ body {
     /* width: min-content; */
     font-size: 5rem;
     line-height: 8rem;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
+    margin-top: 0;
 }
 
 .cards {
@@ -244,6 +231,7 @@ body {
     color: white;
     font-size: 1.6rem;
     font-family: 'Bad Script', serif;
+    margin-top: 0;
 }
 
 .card-head p {
@@ -295,32 +283,36 @@ body {
 }
 
 .client-heading {
-    width: 50%;
-    margin-left: 11rem;
+    padding-inline: 11vw;
     margin-top: 10rem;
 }
 
 .client-heading h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
+    /* width: 50%; */
 }
 
 .client-heading p {
+    width: 50%;
     font-size: 1.5rem;
 }
 
 .client-heading h2 {
-    margin-top: 3rem;
+    margin-top: 4rem;
     font-size: 2.5rem;
     font-family: 'Abril Fatface', serif;
+    /* text-align: center; */
 
 }
 
 .images {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: auto;
 
-    padding: 10rem 9rem;
+    padding: 10vw 9vw;
     padding-bottom: 18rem;
 
 }
@@ -392,7 +384,7 @@ body {
 .mid-heading {
     background-color: rgb(14, 14, 14);
     text-align: center;
-    padding: 15rem 10rem;
+    padding: 15vw 10vw;
 }
 
 .mid-heading h1 {
@@ -409,7 +401,7 @@ body {
 .together {
     background-color: rgb(14, 14, 14);
     font-size: 2rem;
-    padding: 3rem 10rem;
+    padding: 3vw 10vw;
     color: white;
     margin-top: 0;
 }
@@ -442,7 +434,7 @@ body {
 }
 
 footer {
-    padding: .5rem 9rem;
+    padding: .5rem 9vw;
     background-color: rgb(206, 201, 201);
 }
 
@@ -450,6 +442,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* flex-wrap: wrap; */
 }
 
 nav a {
@@ -464,19 +457,193 @@ nav a:hover {
 
 .nav-con {
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: center;
     gap: 2rem;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     /* width: 10rem; */
+    padding-inline: initial;
 }
 
 .nav-media img {
-    width: 40px;
-    height: 40px;
+    width: 3rem;
+    height: 3rem;
+    /* min-width: 5px;
+    min-height: 5px;
+    display: table-cell; */
 }
 
 .nav-media {
     display: flex;
     gap: 10px;
+    /* justify-content: center; */
 
 }
+
+.images,
+.company-profile,
+.contact {
+    flex-wrap: wrap;
+}
+
+/* nav>* {
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+@media screen and (max-width:1000px) {
+
+    html {
+        font-size: 3vw;
+
+
+    }
+
+    .reviews {
+        flex-wrap: wrap;
+    }
+
+    .heading>img {
+        justify-self: flex-start;
+        align-self: flex-start;
+        /* margin-right: 0; */
+        /* margin-left: 160px; */
+    }
+
+    .images,
+    .reviews,
+    .company-profile,
+    .contact {
+        flex-direction: column;
+    }
+
+    .images {
+        padding: 9vw 0;
+    }
+
+
+    .reviews>h1>span {
+        display: block;
+    }
+
+
+
+    .heading {
+        height: 70vw;
+        /* padding-inline: 10vh; */
+    }
+
+    .heading p,
+    .heading h1 {
+        margin-bottom: 1rem;
+    }
+
+    .heading h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .nav-media {
+        padding: initial;
+    }
+
+    .reviews>h1 {
+        text-align: center;
+    }
+
+    .company-profile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .images figure:hover::before {
+        transform: translateY(0px);
+        transform: unset;
+
+    }
+
+    .images figure:hover {
+        transform: translateY(0px);
+    }
+
+    .images figure:before {
+        display: none;
+        transform: translateX(-110%);
+
+    }
+
+    .sub-card {
+        flex-wrap: wrap;
+    }
+
+    .client-heading h2 {
+        text-align: center;
+    }
+
+    /* .images figure {
+        transform: translateX(55%);
+    } */
+
+    /*
+
+    .images figure {
+        transform: translateX(-55%);
+    } */
+    .client-heading p {
+        width: 100%;
+    }
+
+}
+
+/* .colel {
+    position: relative;
+}
+
+.colel div {
+   
+    width: 20rem;
+    height: 20rem;
+    background-color: aqua;
+}
+
+.colel .aaa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+ 
+    background-color: blue;
+    transition: ease 1s;
+    transition-delay: background-color 1s;
+    
+    opacity: 0;
+}
+
+.colel:hover .aaa {
+    z-index: 1;
+    
+    opacity: 1;
+    background-color: red;
+    transform: translateY(100%);
+} */
+
+/* .baa {
+    transition: ease 250ms;
+    z-index: 2;
+}
+
+.colel:hover .baa {
+    transform: scale(1.1);
+} */

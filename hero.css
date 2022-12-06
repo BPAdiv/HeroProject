@@ -24,7 +24,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(./hero-assets/top-bg-2.jpg);
+    background-image: url(./top-bg-2.jpg);
     height: 110vh;
     display: flex;
     flex-direction: column;

@@ -448,6 +448,10 @@ header {
     opacity: 97%;
 }
 
+#check:hover {
+    color: #000000;
+}
+
 
 .nav-top img {
     width: 2rem;
@@ -502,6 +506,7 @@ header {
 }
 
 label:hover {
+    color: #000000;
     cursor: pointer;
     text-decoration: underline;
 
@@ -511,8 +516,8 @@ input[type='checkbox'] {
     display: none;
 }
 
-.nav-top il:nth-child(4):hover,
-.nav-top il:nth-child(5):hover {
+.nav-top il:nth-child(4):hover>a,
+.nav-top il:nth-child(5):hover>a {
     text-decoration: underline;
     cursor: pointer;
     color: #000000;
